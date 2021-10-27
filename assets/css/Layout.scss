@@ -1,0 +1,280 @@
+@import "./colors";
+// start Layout
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+.header {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 77, 153, 1) 0%,
+    rgba(49, 188, 241, 1) 100%
+  );
+}
+.first {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar-light .navbar-brand {
+  color: $Snow !important;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $Snow !important;
+}
+.header div#navbarNavDropdown1 {
+  flex-grow: 0;
+}
+.secend {
+  padding: 20px 0;
+}
+.image {
+  display: inline;
+  background-color: $Snow;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 10px;
+}
+img.rounded-circle {
+  margin-left: 3px;
+}
+a#dropdownUser2 {
+  color: $Snow;
+}
+/* End Header  */
+/* Start Content  */
+.Contact {
+  background: #83c24d;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: fixed;
+  right: 43px;
+  bottom: 95px;
+  z-index: 9999;
+  cursor: pointer;
+  border: none;
+}
+
+.Contact .message {
+  background-color: $Snow;
+  width: 23px;
+  height: 20px;
+  position: fixed;
+  right: 38px;
+  border-bottom-left-radius: 10px;
+  padding-left: 5px;
+}
+.Contact .message p {
+  margin: 0;
+  color: #ff8f00;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Contact .icon {
+  width: 24px;
+  height: 22px;
+  background-color: $Snow;
+  margin: 20px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.message-box {
+  display: none;
+  pointer-events: auto;
+  width: 400px;
+  height: 564px;
+  background-color: $Snow;
+  border-radius: 20px;
+  position: fixed;
+  right: 45px;
+  top: 225px;
+  z-index: 1200;
+  box-shadow: 1px 13px 15px -2px rgba(0, 0, 0, 0.37);
+}
+div.message-box.active {
+  display: block;
+}
+.message-box ::after {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: $Snow transparent transparent transparent;
+  position: absolute;
+  right: 18px;
+  top: 564px;
+}
+.message-box-header {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 77, 153, 1) 0%,
+    rgba(49, 188, 241, 1) 100%
+  );
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.message-box-header .head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: end;
+  margin-bottom: 20px;
+}
+.message-box-header .head p {
+  font-size: 22px;
+  color: $Snow;
+}
+.message-box-header .head button {
+  width: 50px;
+  background-color: transparent;
+  color: $Snow;
+  font-size: 25px;
+  padding: 0px;
+  border: none;
+  font-weight: 600;
+}
+.message-box-avatar {
+  width: 55px;
+  border-radius: 30px;
+  margin: 0 -13px;
+}
+.message-box-header p {
+  color: $Snow;
+  font-size: 16px;
+  line-height: 0.3;
+}
+.message-box-header .col-8 {
+  padding: 16px 05px;
+}
+.message-box-header .row {
+  margin-bottom: -25px;
+}
+.message-box-content {
+  background: $Snow;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 35px;
+  overflow-y: scroll;
+  max-height: 409px;
+}
+.message-box-content .me {
+  display: flex;
+}
+.me .message-box-conten-rectengle {
+  width: 90%;
+  background-color: rgba($meMessage, 0.2);
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 10px;
+}
+.me .message-box-conten-rectengle p {
+  color: $DarkGray;
+}
+.me .message-box-conten-time {
+  color: $DarkGray;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+.bot {
+  display: flex;
+  justify-content: flex-start;
+}
+.bot .message-box-conten-rectengle {
+  width: 105%;
+  background-color: $botMessage;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 10px;
+}
+.bot .message-box-conten-time {
+  line-height: 0.3;
+  margin-left: 13px;
+  font-size: 14px;
+  color: $DarkGray;
+}
+.chat-bot {
+  margin: 10px 0;
+}
+.path {
+  position: fixed;
+  right: 102px;
+  top: 687px;
+  cursor: pointer;
+}
+.message-round {
+  position: fixed;
+  right: 125px;
+  top: 688px;
+  cursor: pointer;
+}
+/* End Content  */
+/* Satart footer  */
+.footer {
+  margin-top: auto;
+  z-index: -1;
+  .navbar-brand {
+    font-size: 15px;
+  }
+  .nav-link {
+    padding: 0;
+    font-size: 15px;
+  }
+}
+.footer .row {
+  --bs-gutter-x: 0rem;
+}
+.footer .container-fluid {
+  padding: 0 20px;
+}
+.footer nav {
+  background-color: $DarkGray;
+}
+.footer div#navbarNavDropdown {
+  flex-grow: 0;
+}
+ul.dropdown-menu.text-small.shadow.malist {
+  position: absolute;
+  transform: translate(-265px, 27px) !important;
+  inset: initial !important;
+  padding: 15px;
+  overflow-y: scroll;
+  max-height: 370px;
+  width: 430px;
+}
+ul.dropdown-menu.text-small.shadow.malist::before {
+  content: "";
+  border-color: transparent transparent $Snow transparent;
+  border-style: solid;
+  border-width: 12px;
+  position: absolute;
+  top: -24px;
+  right: 10px;
+}
+ul.dropdown-menu.text-small.shadow.malist .row p {
+  margin-bottom: 0;
+}
+.file-done .row {
+  background-color: #efefef;
+  padding: 10px;
+}
+.file-done .row p {
+  text-decoration: line-through;
+}
+.file-actif .row {
+  background-color: #efefef;
+  padding: 10px;
+}
+.file-actif {
+  margin-top: 10px;
+}
+
+// End Layout

@@ -1,0 +1,181 @@
+@import "./colors";
+
+// login
+@media (max-width: 768px) {
+  .oval {
+    position: absolute;
+    width: 150%;
+    height: 91%;
+    background: linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    border-radius: 50%;
+    top: -150px;
+    left: -180px;
+  }
+  .fly {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: -115px;
+    right: 40px;
+  }
+  .left-content p {
+    font-size: 25px;
+    color: $Snow;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .right-content {
+    background-color: $Snow;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    margin-top: -21px;
+    height: auto;
+  }
+  .sub {
+    padding: 11px;
+  }
+  .WeCount {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 768px) {
+  .right-content {
+    padding: 10px;
+  }
+  .row.form {
+    max-width: 100%;
+    .div-oub {
+      width: 44%;
+      padding: 0;
+    }
+    .form-check.form-switch {
+      width: 56%;
+      padding-right: 0;
+      padding-left: 36px;
+    }
+  }
+  .left-content {
+    p {
+      font-size: 20px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .left-content {
+    p {
+      font-size: 25px;
+    }
+    .fly {
+      width: 300px;
+      bottom: -88px;
+    }
+  }
+  .right-content {
+    p {
+      font-size: 15px;
+    }
+    .form-floating.mb-3 {
+      label {
+        font-size: 12px;
+      }
+    }
+    .row.form {
+      label {
+        font-size: 13px;
+      }
+      a {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .left-content {
+    p {
+      font-size: 30px;
+    }
+    .fly {
+      width: 350px;
+      bottom: -100px;
+      right: 36px;
+    }
+    .oval {
+      width: 70%;
+      height: 85%;
+    }
+  }
+  .right-content {
+    padding: 20px;
+    p {
+      font-size: 17px;
+    }
+    .form-floating.mb-3 {
+      label {
+        font-size: 12px;
+      }
+    }
+    .row.form {
+      label {
+        font-size: 15px;
+      }
+      a {
+        font-size: 15px;
+      }
+      .sub {
+        padding: 8px;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) {
+  .left-content {
+    padding: 80px;
+    p {
+      font-size: 40px;
+    }
+    .fly {
+      width: 600px;
+      bottom: -150px;
+      right: 36px;
+    }
+    .oval {
+      width: 70%;
+      height: 85%;
+    }
+  }
+  .right-content {
+    padding: 40px;
+    .WeCount {
+      margin-bottom: 70px;
+      margin-top: 50px;
+    }
+    p {
+      font-size: 23px;
+    }
+    .form-floating.mb-3 {
+      label {
+        font-size: 12px;
+      }
+    }
+    .row.form {
+      label {
+        font-size: 15px;
+      }
+      a {
+        font-size: 15px;
+      }
+      .sub {
+        padding: 8px;
+      }
+    }
+  }
+  .form-floating.mb-3 input.form-control {
+    padding: 15px;
+  }
+}
+// end login

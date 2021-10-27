@@ -1,0 +1,341 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, right top, from(#074d99), to(#31bcf1));
+  background: linear-gradient(90deg, #074d99 0%, #31bcf1 100%);
+}
+
+.first {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.navbar-light .navbar-brand {
+  color: #ffffff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+.header div#navbarNavDropdown1 {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.secend {
+  padding: 20px 0;
+}
+
+.image {
+  display: inline;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 8px;
+  margin: 0 10px;
+}
+
+img.rounded-circle {
+  margin-left: 3px;
+}
+
+a#dropdownUser2 {
+  color: #ffffff;
+}
+
+/* End Header  */
+/* Start Content  */
+.Contact {
+  background: #83c24d;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  position: fixed;
+  right: 43px;
+  bottom: 95px;
+  z-index: 9999;
+  cursor: pointer;
+  border: none;
+}
+
+.Contact .message {
+  background-color: #ffffff;
+  width: 23px;
+  height: 20px;
+  position: fixed;
+  right: 38px;
+  border-bottom-left-radius: 10px;
+  padding-left: 5px;
+}
+
+.Contact .message p {
+  margin: 0;
+  color: #ff8f00;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Contact .icon {
+  width: 24px;
+  height: 22px;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.message-box {
+  display: none;
+  pointer-events: auto;
+  width: 400px;
+  height: 564px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  position: fixed;
+  right: 45px;
+  top: 225px;
+  z-index: 1200;
+  -webkit-box-shadow: 1px 13px 15px -2px rgba(0, 0, 0, 0.37);
+          box-shadow: 1px 13px 15px -2px rgba(0, 0, 0, 0.37);
+}
+
+div.message-box.active {
+  display: block;
+}
+
+.message-box ::after {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: #ffffff transparent transparent transparent;
+  position: absolute;
+  right: 18px;
+  top: 564px;
+}
+
+.message-box-header {
+  background: -webkit-gradient(linear, left top, right top, from(#074d99), to(#31bcf1));
+  background: linear-gradient(90deg, #074d99 0%, #31bcf1 100%);
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.message-box-header .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 20px;
+}
+
+.message-box-header .head p {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.message-box-header .head button {
+  width: 50px;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 0px;
+  border: none;
+  font-weight: 600;
+}
+
+.message-box-avatar {
+  width: 55px;
+  border-radius: 30px;
+  margin: 0 -13px;
+}
+
+.message-box-header p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 0.3;
+}
+
+.message-box-header .col-8 {
+  padding: 16px 05px;
+}
+
+.message-box-header .row {
+  margin-bottom: -25px;
+}
+
+.message-box-content {
+  background: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 35px;
+  overflow-y: scroll;
+  max-height: 409px;
+}
+
+.message-box-content .me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.me .message-box-conten-rectengle {
+  width: 90%;
+  background-color: rgba(39, 162, 220, 0.2);
+  padding: 15px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 10px;
+}
+
+.me .message-box-conten-rectengle p {
+  color: #373737;
+}
+
+.me .message-box-conten-time {
+  color: #373737;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+}
+
+.bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.bot .message-box-conten-rectengle {
+  width: 105%;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 10px;
+}
+
+.bot .message-box-conten-time {
+  line-height: 0.3;
+  margin-left: 13px;
+  font-size: 14px;
+  color: #373737;
+}
+
+.chat-bot {
+  margin: 10px 0;
+}
+
+.path {
+  position: fixed;
+  right: 102px;
+  top: 687px;
+  cursor: pointer;
+}
+
+.message-round {
+  position: fixed;
+  right: 125px;
+  top: 688px;
+  cursor: pointer;
+}
+
+/* End Content  */
+/* Satart footer  */
+.footer {
+  margin-top: auto;
+  z-index: -1;
+}
+
+.footer .navbar-brand {
+  font-size: 15px;
+}
+
+.footer .nav-link {
+  padding: 0;
+  font-size: 15px;
+}
+
+.footer .row {
+  --bs-gutter-x: 0rem;
+}
+
+.footer .container-fluid {
+  padding: 0 20px;
+}
+
+.footer nav {
+  background-color: #373737;
+}
+
+.footer div#navbarNavDropdown {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+ul.dropdown-menu.text-small.shadow.malist {
+  position: absolute;
+  -webkit-transform: translate(-265px, 27px) !important;
+          transform: translate(-265px, 27px) !important;
+  inset: initial !important;
+  padding: 15px;
+  overflow-y: scroll;
+  max-height: 370px;
+  width: 430px;
+}
+
+ul.dropdown-menu.text-small.shadow.malist::before {
+  content: "";
+  border-color: transparent transparent #ffffff transparent;
+  border-style: solid;
+  border-width: 12px;
+  position: absolute;
+  top: -24px;
+  right: 10px;
+}
+
+ul.dropdown-menu.text-small.shadow.malist .row p {
+  margin-bottom: 0;
+}
+
+.file-done .row {
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.file-done .row p {
+  text-decoration: line-through;
+}
+
+.file-actif .row {
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.file-actif {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=Layout.css.map */
