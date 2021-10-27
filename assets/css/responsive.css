@@ -81,6 +81,9 @@
 }
 
 @media (min-width: 1200px) {
+  .first .navbar-brand {
+    font-size: 15px;
+  }
   .up h3 {
     font-size: 25px;
   }
