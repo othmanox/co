@@ -81,6 +81,15 @@
 }
 
 @media (min-width: 1200px) {
+  .up h3 {
+    font-size: 25px;
+  }
+  .up .btn {
+    font-size: 15px;
+  }
+  .up .btn i {
+    font-size: 15px;
+  }
   .left-content p {
     font-size: 30px;
   }

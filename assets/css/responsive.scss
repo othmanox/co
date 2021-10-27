@@ -95,6 +95,17 @@
   }
 }
 @media (min-width: 1200px) {
+  .up {
+    h3 {
+      font-size: 25px;
+    }
+    .btn {
+      font-size: 15px;
+      i {
+        font-size: 15px;
+      }
+    }
+  }
   .left-content {
     p {
       font-size: 30px;

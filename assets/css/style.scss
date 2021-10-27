@@ -110,7 +110,7 @@ form {
   }
 }
 .sub {
-  background-color: #97c157;
+  background-color: $btnGreen;
   color: $Snow;
   width: 100%;
   border-radius: 25px;
@@ -146,6 +146,13 @@ form {
 
 .main-content .up {
   padding: 30px 0px 30px 10px;
+  .col-md-4 {
+    position: relative;
+    .btn {
+      position: absolute;
+      right: 8px;
+    }
+  }
 }
 .up .btn i {
   font-size: 20px;
@@ -532,7 +539,7 @@ div.row.ajouter-btn.active {
   justify-content: space-around;
   padding: 15px 10px;
   background-color: $Snow;
-  border: 1px solid #97c157;
+  border: 1px solid $btnGreen;
   border-radius: 5px;
 }
 .data-info {
@@ -559,7 +566,7 @@ div.row.ajouter-btn.active {
 }
 .data-info .data-info-detail {
   font-size: 20px;
-  color: #97c157;
+  color: $btnGreen;
   font-weight: 600;
 }
 .data-info-last {
@@ -570,7 +577,7 @@ div.row.ajouter-btn.active {
   border-radius: 5px;
   display: flex;
   align-items: center;
-  background-color: #97c157;
+  background-color: $btnGreen;
 }
 .data-info-last-2 {
   width: 45%;
@@ -580,7 +587,7 @@ div.row.ajouter-btn.active {
   border-radius: 5px;
   display: flex;
   align-items: center;
-  background-color: #97c157;
+  background-color: $btnGreen;
 }
 .data-info-last p {
   color: $Snow;
