@@ -81,6 +81,17 @@
 }
 
 @media (min-width: 1200px) {
+  .Contact {
+    background: #83c24d;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    z-index: 9999;
+    border: none;
+  }
   .first .navbar-brand {
     font-size: 15px;
   }

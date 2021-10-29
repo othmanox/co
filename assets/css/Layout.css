@@ -62,39 +62,56 @@ a#dropdownUser2 {
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  position: fixed;
-  right: 43px;
-  bottom: 95px;
-  z-index: 9999;
-  cursor: pointer;
+  position: relative;
   border: none;
 }
 
 .Contact .message {
   background-color: #ffffff;
-  width: 23px;
+  width: 20px;
   height: 20px;
+  position: absolute;
+  right: -15%;
+  top: -7%;
+  padding: 0;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 3px 16px -5px #000000;
+          box-shadow: 0px 3px 16px -5px #000000;
+}
+
+.contact-btn {
   position: fixed;
-  right: 38px;
-  border-bottom-left-radius: 10px;
-  padding-left: 5px;
+  right: 1%;
+  bottom: 8%;
+  z-index: 1222;
 }
 
 .Contact .message p {
   margin: 0;
   color: #ff8f00;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .Contact .icon {
-  width: 24px;
-  height: 22px;
-  background-color: #ffffff;
-  margin: 20px auto;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .message-box {
