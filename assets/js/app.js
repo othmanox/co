@@ -9,13 +9,25 @@ const gerantradio = document.getElementById('gerant-oui');
 const gerantinfo = document.getElementById('gerant-info');
 const gerant2 = document.getElementById('gerant-2');
 const SiegeSocial = document.getElementById('flexRadioDefault2');
-
 var i = 3;
-
+var test = false;
 
 
 function oppen() {
-    messagebox.classList.add('active');
+    if (test == true) {
+        $("#message-box").removeClass("active");
+        test = false;
+        $(".message").css("display","flex");
+        $("#oppen-icon").css("display","block");
+        $("#oppen-arow").css("display","none");
+    }
+    else if (test == false) {
+        $("#message-box").addClass("active");
+        test = true;
+        $(".message").css("display","none");
+        $("#oppen-icon").css("display","none");
+        $("#oppen-arow").css("display","block");
+    }
 }
 function closebox() {
     console.log('test')

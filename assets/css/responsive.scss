@@ -158,6 +158,11 @@
       }
     }
   }
+  .message-box {
+    position: fixed;
+    right: 18px;
+    top: 78px;
+  }
 }
 @media (min-width: 1400px) {
   .left-content {
