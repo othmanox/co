@@ -32,6 +32,9 @@ function oppen() {
 function closebox() {
     console.log('test')
     messagebox.classList.remove('active');
+    $(".message").css("display","flex");
+    $("#oppen-icon").css("display","block");
+    $("#oppen-arow").css("display","none");
 }
 function btnactive1() {
     butn2.classList.remove("active");

@@ -8,6 +8,7 @@ body {
   min-height: 100vh;
   height: 100%;
 }
+
 .header {
   background: linear-gradient(
     90deg,
@@ -19,12 +20,12 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-.navbar-light .navbar-brand {
-  color: $Snow !important;
-}
-.navbar-light .navbar-nav .nav-link {
-  color: $Snow !important;
-}
+// .navbar-light .navbar-brand {
+//   color: $Snow !important;
+// }
+// .navbar-light .navbar-nav .nav-link {
+//   color: $Snow !important;
+// }
 .header div#navbarNavDropdown1 {
   flex-grow: 0;
 }
@@ -214,9 +215,9 @@ div.message-box.active {
   margin: 10px 0;
 }
 .path {
-  position: fixed;
-  right: 102px;
-  top: 687px;
+  position: absolute;
+  right: 13px;
+  top: 10px;
   cursor: pointer;
 }
 .message-round {
